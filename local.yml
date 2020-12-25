@@ -25,7 +25,7 @@
   - name: copy wallpaper file
     copy:
       src: files/StarrySky_Wallpaper.jpg
-      dest: /usr/share/backgrounds/StarrySky_Wallpaper.jpg
+      dest: /usr/share/backgrounds/linuxmint-tricia/StarrySky_Wallpaper.jpg
       owner: root
       group: root
 
@@ -33,7 +33,7 @@
     become_user: joshua
     dconf:
       key: "/org/gnome/desktop/background/picture-uri"
-      value: "'file://usr/share/backgrounds/StarrySky_Wallpaper.jpg'"
+      value: "'file://usr/share/backgrounds/linuxmint-tricia/StarrySky_Wallpaper.jpg'"
 
   - name: set wallpaper position
     become_user: joshua
