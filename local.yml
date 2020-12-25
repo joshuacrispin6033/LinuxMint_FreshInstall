@@ -32,3 +32,10 @@
     dconf:
       key: "/org/gnome/desktop/background/picture-options"
       value: "'scaled'"
+
+  - name: copy .bashrc file
+    copy:
+      src: files/bashrc
+      dest: /home/joshua/.bashrc
+      owner: joshua
+      group: joshua
