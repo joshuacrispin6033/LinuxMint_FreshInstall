@@ -16,7 +16,7 @@
 
   - name: copy wallpaper file
     copy:
-      src: files/wallpaper.png
+      src: files/StarrySky_Wallpaper.jpg
       dest: /usr/share/backgrounds/StarrySky_Wallpaper.jpg
       owner: root
       group: root
