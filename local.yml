@@ -8,6 +8,7 @@
     package:
       name: 
 	- dconf-cli
+        - python3-psutil
 	- git
         - htop
         - hardinfo
