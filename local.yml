@@ -30,13 +30,13 @@
       group: root
 
   - name: set wallpaper
-    become_user: joshua
+    become: true
     dconf:
       key: "/org/gnome/desktop/background/picture-uri"
       value: "'file://usr/share/backgrounds/linuxmint-tricia/StarrySky_Wallpaper.jpg'"
 
   - name: set wallpaper position
-    become_user: joshua
+    become: true
     dconf:
       key: "/org/gnome/desktop/background/picture-options"
       value: "'scaled'"
