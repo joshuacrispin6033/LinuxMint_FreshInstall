@@ -7,7 +7,7 @@
   - name: install packages
     package:
       name: 
-	- dconf-cli
+        - dconf-cli
         - python3-psutil
 	- git
         - htop
