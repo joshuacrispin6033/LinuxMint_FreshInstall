@@ -9,7 +9,7 @@
       name: 
         - dconf-cli
         - python3-psutil
-	- git
+        - git
         - htop
         - hardinfo
         - simplescreenrecorder
