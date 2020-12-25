@@ -7,6 +7,8 @@
   - name: install packages
     package:
       name: 
+	- dconf-cli
+	- git
         - htop
         - hardinfo
         - simplescreenrecorder
