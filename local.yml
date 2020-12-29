@@ -8,11 +8,15 @@
     package:
       name: 
         - dconf-cli
-        - python3-psutil
+        - python-psutil
         - git
         - htop
         - hardinfo
+        - Gparted
         - simplescreenrecorder
+        - soundKonverter
+        - Cheese
+        - HandBrake
 
   - name: copy .bashrc file
     copy:
