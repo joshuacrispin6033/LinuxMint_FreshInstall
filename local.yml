@@ -44,7 +44,7 @@
     become_user: joshua
     dconf:
       key: "/org/gnome/desktop/background/picture-options"
-      value: "'scaled'"
+      value: "'centered'"
 
   - name: add ansible user
     user:
