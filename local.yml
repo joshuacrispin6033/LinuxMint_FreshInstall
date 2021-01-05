@@ -15,9 +15,9 @@
         - hardinfo
         - gparted
         - simplescreenrecorder
-        - soundKonverter
-        - Cheese
-        - HandBrake
+        - soundkonverter
+        - cheese
+        - handbrake
 
   - name: copy .bashrc file
     copy:
