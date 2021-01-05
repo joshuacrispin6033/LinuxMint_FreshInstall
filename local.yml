@@ -10,7 +10,7 @@
         - dconf-cli
         - python-psutil
         - git
-        - Ansible
+        - ansible
         - htop
         - hardinfo
         - Gparted
