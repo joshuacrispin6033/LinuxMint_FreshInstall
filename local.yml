@@ -13,7 +13,7 @@
         - ansible
         - htop
         - hardinfo
-        - Gparted
+        - gparted
         - simplescreenrecorder
         - soundKonverter
         - Cheese
