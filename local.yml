@@ -10,6 +10,7 @@
         - dconf-cli
         - python-psutil
         - git
+        - Ansible
         - htop
         - hardinfo
         - Gparted
@@ -44,5 +45,35 @@
     dconf:
       key: "/org/gnome/desktop/background/picture-options"
       value: "'scaled'"
+
+  - name: add ansible user
+    user:
+      name: velociraptor
+      system: yes 
+
+  - name: set up sudo for velociraptor
+    copy:
+      src: files/sudoer_velociraptor
+      dest: /etc/sudoers.d/velociraptor
+      owner: root
+      group: root
+      mode: 0440
+
+  - name: add ansible-pull cron job
+    cron:
+      name: ansible auto-provision
+      user: velociraptor
+      minute: "*/10"
+      job: ansible-pull -o -U https://github.com/joshuacrispin6033/LinuxMint_FreshInstall.git
+
+
+
+
+
+
+
+
+
+
 
  
